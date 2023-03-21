@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float: none;
+	position: static;
+    list-style: none;
+}
+
+.container{
+    width: 100%;
+    min-width: 1440px;
+}
+
+.phoneVer{
+    display: none;
+}
+
+/*--------------------------------------------------*/
+
+
+/*--------------------------------------------------*/
+header{
+    background-color: black;
+    height: 80px;
+    
+}
+.header-left img{
+    float: left;
+    margin-top: 6px;
+    margin-left: 20px;
+}
+.header-left h3{
+    color: white;
+    float: left;
+    padding-top: 28px;
+    padding-left: 20px;
+}
+
+.openbtn{
+    display: none;
+}
+
+/*==================================================
+　5-2-8 3本線が横方向に回転して×に
+===================================*/
+
+/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+.openbtn{
+	/*ボタン内側の基点となるためrelativeを指定。
+追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+	position: relative;
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+	border-radius: 5px;
+}
+
+/*ボタン内側*/
+.openbtn .openbtn-area{
+    transition: all .1s;/*アニメーションの設定*/
+	width:50px;
+	height:50px;
+}
+
+.openbtn span{
+    display: inline-block;
+    transition: all 0.5s;
+    position: absolute;
+    left: 338px;
+    height: 4px;
+    border-radius: 2px;
+	background: #fff;
+  	width: 70%;
+  }
+
+.openbtn span:nth-of-type(1) {
+	top:27px;
+}
+
+.openbtn span:nth-of-type(2) {
+	top:39px;
+}
+
+.openbtn span:nth-of-type(3) {
+	top:51px;
+}
+
+/*activeクラスが付与されると .openbtn-areaが360度回転し、その中の線が回転して×に*/
+
+
+.openbtn.active span:nth-of-type(1) {
+    top: 31px;
+    left: 335px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 70%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+    top: 43px;
+    left: 335px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 70%;
+}
+/*--------------------------------------------------*/
+
+.swich-wrapper{
+    background-color: grey;
+    text-align: center;
+    border-bottom: 10px solid black;
+   
+}
+.swich-wrapper a{
+    padding: 20px 75px;
+    background-color: white;
+    display: inline-block;
+    color: black;
+    opacity: 0.6;
+    font-size: 20px;
+    transition: 0.3s;
+    font-family: "Arial Black";   
+}
+
+.swich-wrapper a:hover{
+    opacity: 1;
+}
+/*--------------------------------------------------*/
+
+
+.top-wrapper{
+    background-image: url(/img/a1.png);
+    background-size: 200px;
+    height: 100%;
+    
+}
+
+.change-btn-wrapper{
+ background-color: rgba(255, 255, 255, 0.746);
+ padding-bottom: 70px;
+}
+
+
+.slider {
+    position:relative;
+	z-index: 1;
+	/*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
+	height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+.slider-item01 {
+    background:url(/img/top1.jpg);
+    
+}
+
+.slider-item02 {
+    background:url(/img/top2.jpg);
+}
+
+.slider-item03 {
+    background:url(/img/top3.jpg);
+}
+.slider-item04{
+    background-image: url(/img/top4.jpg);
+}
+
+.slider-item05{
+    background-image: url(/img/top5.jpg);
+}
+
+.slider-item {
+    width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
+    height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+    background-repeat: no-repeat;/*背景画像をリピートしない*/
+    background-position: center;/*背景画像の位置を中央に*/
+    background-size: 70%;/*背景画像が.slider-item全体を覆い表示*/
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+	z-index: 3;
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 10px solid #000000;/*矢印の色*/
+    border-right: 10px solid #000000;/*矢印の色*/
+    height: 40px;
+    width: 40px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right:2.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+	position: relative;
+	z-index: 3;
+    text-align:center;
+}
+
+.slick-dots li {
+    display:inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:35px;/*ドットボタンのサイズ*/
+    height:15px;/*ドットボタンのサイズ*/
+    display:block;
+    background:#ffffff;/*ドットボタンの色*/
+    border-radius: 5px;
+}
+
+.slick-dots .slick-active button{
+    background:#000000;/*ドットボタンの現在地表示の色*/
+}
+
+/*--------------------------------------------------*/
+.introduction-wrapper{
+    height:100%;
+    border-top: 1px solid black;
+    
+}
+.intro-text h1{
+    font-family: "Honoka_Shin_Mincho_L";
+    padding-top: 80px;
+    padding-left:15px;
+    font-size: 60px;
+    width: 600px;
+    margin-left: 200px;
+    background: linear-gradient(transparent 0%, transparent 80%, #88fd8215 50%, #00ff1a 100%);
+}
+
+.intro-text h2{
+    font-family: "Honoka_Shin_Mincho_L";
+    font-size: 60px;
+    width: 530px;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin-left: 650px;
+    background: linear-gradient(transparent 0%, transparent 80%, #88fd8215 50%, #00ff1a 100%);
+}
+.intro-text p{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.intro-img{
+    text-align: center;
+    padding: 20px 0;
+}
+/*-----------------------------------------------------------*/
+
+.faq-wrapper {
+    padding: 80px 0 120px 0;
+    position: relative;
+    top: 0px;
+    text-align: center;
+}
+
+.faq-container h1{
+    font-family: "Honoka_Shin_Mincho_L";
+    font-size: 50px;
+}
+
+
+.faq-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    background-color: rgb(239, 239, 239);
+    transform: skewY(2deg);
+    z-index: -1;
+}
+.faqs{
+    width: 800px;
+    margin: auto;
+}
+.faq h2{
+    font-family: "azuki_font";
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    margin: 10px 0;
+    padding:15px 0;
+}
+.faq h3{
+    font-family: "azuki_font";
+    padding: 10px 0 20px 0;
+}
+.faq-span{
+    float: right;
+    font-size: 40px;
+    padding-right: 20px;
+    
+}
+.answer{
+    display: none;
+    background-color: white;
+    border-radius: 20px;
+}
+.answer p{
+    padding: 20px 0;
+    font-size:18px;
+}
+.answer a{
+    margin-bottom: 20px;
+}
+
+/*-----------------------------------------------------------*/
+
+.news-wrapper{
+    background-color:white;
+    height: 100%;
+    margin: 40px 0;
+}
+.news-inner{
+    width: 1000px;
+    margin: auto
+}
+
+.news-inner h1{
+    font-family: "Honoka_Shin_Mincho_L";
+    text-align: center;
+    font-size: 50px;
+    border-bottom:1px dotted grey;
+    padding-bottom: 30px;
+}
+
+
+.news{
+    border-bottom:1px dotted grey;
+}
+.news h2{
+ font-size: 20px;
+ display: inline-block;
+ margin-left: 20px;
+ margin-right: 20px;
+
+}
+.news a{
+ font-size: 25px;
+ padding: 10px;
+ display: inline-block;
+ opacity: 0.5;
+}
+.news a:hover{
+    opacity: 1;
+}
+.news-bottom{
+    border-bottom:1px dotted gray;
+}
+/*--------------------------------------------------*/
+
+
+.snsinfo{
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.382);
+    padding: 20px 0;
+    
+}
+
+.insta-icon{
+    text-align: center;
+    
+}
+.insta-icon h1{
+    font-size: 25px;
+    font-family: "Honoka_Shin_Mincho_L";
+    padding-bottom: 10px;
+    
+}
+.insta-icon a{
+    background-image: url(/img/insta_background.jpg);
+    background-size: cover;
+    padding: 18px 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    opacity: 0.8;
+    box-shadow: 0 6px black;
+    display: inline-block;
+}
+
+.insta-icon a:hover{
+    opacity: 1;
+}
+
+.insta-icon a:active{
+    box-shadow: none;
+    position: relative;
+    top: 6px;
+}
+
+.fa-brands{
+    margin-right: 10px;
+}
+/*--------------------------------------------------*/
+
+.special-thanks{
+    text-align: center;
+    height: 100%;
+    background-color: rgb(239, 239, 239);
+}
+
+.special-thanks h1{
+    font-size: 25px;
+    font-family: "Honoka_Shin_Mincho_L";
+    padding-top: 20px;
+}
+
+.special-thanks a{
+    display: inline-block;
+    padding:30px 90px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.greedy{
+    background-image: url(/img/IMG_2650\ 2.JPG);
+    background-size:cover;
+    background-position: center -6px;
+}
+
+.bingo{
+   background-image:url(/img/bingo_logo.jpg);
+   background-size: cover;
+   background-position: 0px;
+
+}
+
+.chame{
+    background-image: url(/img/chame2.jpg);
+    background-size: cover;
+    background-position:center;
+}
+/*--------------------------------------------------*/
+
+
+
+.fotter-logo p{
+    background-color: black;
+    height: 80px;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+}
