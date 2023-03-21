@@ -1,0 +1,202 @@
+@media screen and (max-width:480px) {
+
+    .pcVer{
+        display: none;
+    }
+    .phoneVer{
+        display: block;
+    }
+    .container{
+        min-width: auto;
+    }
+
+
+    /*-------------------------------------------*/
+
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+    .header-left{
+        margin-bottom: 30px;
+    }
+    .header-left img{
+        margin-left: 5px;
+    }
+    .header-left h3{
+        font-size: 19px;
+        width: 260px;
+        padding-left: 5px;
+    }
+    .openbtn{
+        display: block;
+    }
+    /*-------------------------------------------*/
+    .menu-wrapper{
+        background-color: rgba(0, 0, 0, 0.67);
+    }
+    .menu-inner{
+        display: none;
+    }
+
+    .menu-inner li{
+        text-align: center;
+        border-top: 1px solid white;
+        padding: 10px 0;
+    }
+    .menu-wrapper a{
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    /*-------------------------------------------*/
+    .top-wrapper{
+        background-size: 100px;
+        padding-top: 80px;
+    }
+
+    .slider{
+        height: 100%;
+    }
+
+    .slider-item{
+        height: 25vh;
+        background-size: 100%;
+    }
+
+    .change-btn-wrapper{
+        padding-bottom: 0;
+    }
+    .slick-prev,.slick-next {
+        top: 80px;
+        height: 20px;
+        width: 20px;
+        border-top: 5px solid #000000;/*矢印の色*/
+        border-right: 5px solid #000000;/*矢印の色*/
+    }
+
+    .slick-dots button{
+        margin: 10px 0;
+    }
+
+    /*-------------------------------------------*/
+
+    .intro-text h1{
+        font-size: 35px;
+        width:350px;
+        margin: auto;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .intro-text h2{
+        font-size: 25px;
+        width: 235px;
+        margin: auto;
+
+    }
+    .intro-text p{
+        font-size: 15px;
+        margin: 30px 20px 0 20px;
+    }
+    .intro-img{
+        padding-top:40px;
+    }
+    .intro-img img{
+        width: 201px;
+        height: 269px;
+    }
+
+
+
+
+    /*-------------------------------------------*/
+    .faq-wrapper{
+        padding-bottom: 80px;
+    }
+
+    .faq-container h1{
+        font-size: 35px;
+    }
+    .faqs{
+        width: 90%;
+    }
+    .faq h2{
+        font-size:20px;
+        
+    }
+    .answer p{
+        font-size: 13px;
+    }
+    .faq-span{
+        font-weight: bold;
+        font-size: 30px;
+        padding-right: 0;
+        margin-right: 20px;
+    }
+    /*-------------------------------------------*/
+
+
+
+    
+
+    .iphone-switchlist{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        border: 3px solid black;
+    }
+    
+    .iphone-switchlist li{
+        width: 33.33%;
+        height: 72px;
+        border: 1px solid black;
+        list-style: none;
+    }
+
+    /*-------------------------------------------*/
+
+
+    .news-wrapper{
+        text-align: center;
+    }
+     .news-wrapper a{
+        font-size: 20px;
+        width: 100%;
+    }
+    .news-inner {
+        width: 90%;
+    }
+
+    .news-inner h1{
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    .news h2{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .news a{
+        font-size: 15px;
+        padding-top: 4px;
+    }
+
+    /*-------------------------------------------*/
+
+    .snsinfo{
+        width: 100%;
+    }
+    .insta-icon{
+        width: 100%;
+    }
+
+    /*-------------------------------------------*/
+
+    .special-thanks{
+        width: 100%;
+    }
+   
+}
