@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+body {
+-webkit-text-size-adjust: 100%;
+}
+
 .container{
     width: 100%;
     min-width: 1440px;
