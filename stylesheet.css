@@ -227,6 +227,7 @@ header{
     display:block;
     background:#ffffff;/*ドットボタンの色*/
     border-radius: 5px;
+	border: 1px solid black;
 }
 
 .slick-dots .slick-active button{
