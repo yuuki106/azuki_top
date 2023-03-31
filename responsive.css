@@ -160,10 +160,7 @@
     .news-wrapper{
         text-align: center;
     }
-     .news-wrapper a{
-        font-size: 20px;
-        width: 100%;
-    }
+     
     .news-inner {
         width: 90%;
     }
@@ -182,18 +179,5 @@
     }
 
     /*-------------------------------------------*/
-
-    .snsinfo{
-        width: 100%;
-    }
-    .insta-icon{
-        width: 100%;
-    }
-
-    /*-------------------------------------------*/
-
-    .special-thanks{
-        width: 100%;
-    }
    
 }
