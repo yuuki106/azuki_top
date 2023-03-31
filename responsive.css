@@ -1,13 +1,14 @@
 @media screen and (max-width:480px) {
 
+    
     .pcVer{
         display: none;
     }
     .phoneVer{
         display: block;
     }
-    .container{
-        min-width: auto;
+    body{
+        min-width: 0;
     }
 
 
@@ -15,20 +16,18 @@
 
     header{
         position: fixed;
-        width: 100%;
         top: 0;
         z-index: 10;
+        width: 100%;
     }
-    .header-left{
-        margin-bottom: 30px;
-    }
+    
     .header-left img{
         margin-left: 5px;
     }
     .header-left h3{
         font-size: 19px;
-        width: 260px;
-        padding-left: 5px;
+        width: 80%;
+        margin-left: 5px;
     }
     .openbtn{
         display: block;
@@ -39,12 +38,13 @@
     }
     .menu-inner{
         display: none;
+        padding-top: 30px;
     }
 
     .menu-inner li{
         text-align: center;
         border-top: 1px solid white;
-        padding: 10px 0;
+        padding: 25px 0;
     }
     .menu-wrapper a{
         display: inline-block;
