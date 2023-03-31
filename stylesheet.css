@@ -139,7 +139,7 @@ header{
 
 
 .top-wrapper{
-    background-image: url(/img/a1.png);
+    background-image: url(https://github.com/yuuki106/azuki_top/blob/main/a1.png?raw=true);
     background-size: 200px;
     height: 100%;
     
@@ -159,23 +159,23 @@ header{
 }
 
 .slider-item01 {
-    background:url(/img/top1.jpg);
+    background:url(https://github.com/yuuki106/azuki_top/blob/main/top1.jpg?raw=true);
     
 }
 
 .slider-item02 {
-    background:url(/img/top2.jpg);
+    background:url(https://github.com/yuuki106/azuki_top/blob/main/top2.jpg?raw=true);
 }
 
 .slider-item03 {
-    background:url(/img/top3.jpg);
+    background:url(https://github.com/yuuki106/azuki_top/blob/main/top3.jpg?raw=true);
 }
 .slider-item04{
-    background-image: url(/img/top4.jpg);
+    background-image: url(https://github.com/yuuki106/azuki_top/blob/main/top4.jpg?raw=true);
 }
 
 .slider-item05{
-    background-image: url(/img/top5.jpg);
+    background-image: url(https://github.com/yuuki106/azuki_top/blob/main/top5.jpg?raw=true);
 }
 
 .slider-item {
@@ -400,7 +400,7 @@ header{
     
 }
 .insta-icon a{
-    background-image: url(/img/insta_background.jpg);
+    background-image: url(https://github.com/yuuki106/azuki_top/blob/main/insta_background.jpg?raw=true);
     background-size: cover;
     padding: 18px 30px;
     font-size: 20px;
@@ -446,20 +446,20 @@ header{
 }
 
 .greedy{
-    background-image: url(/img/IMG_2650\ 2.JPG);
+    background-image: url(https://github.com/yuuki106/azuki_top/blob/main/IMG_2650%202.JPG?raw=true);
     background-size:cover;
     background-position: center -6px;
 }
 
 .bingo{
-   background-image:url(/img/bingo_logo.jpg);
+   background-image:url(https://github.com/yuuki106/azuki_top/blob/main/bingo_logo.jpg?raw=true);
    background-size: cover;
    background-position: 0px;
 
 }
 
 .chame{
-    background-image: url(/img/chame2.jpg);
+    background-image: url(https://github.com/yuuki106/azuki_top/blob/main/chame2.jpg?raw=true);
     background-size: cover;
     background-position:center;
 }
