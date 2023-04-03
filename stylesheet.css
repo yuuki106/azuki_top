@@ -8,9 +8,7 @@
 }
 
 body {
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    text-size-adjust: none;
+    -webkit-text-size-adjust: 100%;
     width: 100%;
     min-width: 1440px;
 }
@@ -29,22 +27,25 @@ header{
     background-color: black;
     height: 80px;
     
-    
-    
 }
-.header-left img{
+.header-left{
     float: left;
-    margin-top: 6px;
-    margin-left: 20px;
-}
-.header-left h3{
-    color: white;
-    float: left;
-    padding-top: 28px;
-    margin-left: 20px;
 }
 
-.openbtn{
+.header-left img{
+    margin-top: 6px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.header-center h3{
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding-left: 100px;
+    width: 380px;
+}
+
+.header-right{
     display: none;
 }
 
@@ -55,42 +56,39 @@ header{
 /*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
 .openbtn{
 	/*ボタン内側の基点となるためrelativeを指定。
-追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
-	position: relative;
-    left: 340px;
+ 追従するナビゲーションの場合はfixed＋top、rightといった位置をセットで指定*/
+	position: fixed;
+    top: 0;
+    right: 0;
     width: 50px;
-    height:50px;
 	border-radius: 5px;
+
 }
 
 /*ボタン内側*/
-.openbtn .openbtn-area{
-    transition: all .1s;/*アニメーションの設定*/
-	width:50px;
-	height:50px;
-}
+
 
 .openbtn span{
     display: inline-block;
     transition: all 0.5s;
     position: absolute;
-    left: 4px;
+    left: 5px;
     height: 4px;
-    border-radius: 2px;
+    border-radius: 3px;
 	background: #fff;
   	width: 70%;
-  }
+}
 
 .openbtn span:nth-of-type(1) {
-	top:27px;
+	top:25px;
 }
 
 .openbtn span:nth-of-type(2) {
-	top:39px;
+	top:37px;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:51px;
+	top:49px;
 }
 
 /*activeクラスが付与されると .openbtn-areaが360度回転し、その中の線が回転して×に*/
