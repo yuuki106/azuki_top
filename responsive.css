@@ -14,22 +14,27 @@
 
     /*-------------------------------------------*/
 
-    header{
+   header{
         position: fixed;
         top: 0;
         z-index: 10;
         width: 100%;
+        text-align: center;
     }
     
     .header-left img{
-        margin-left: 5px;
+        margin-left: 0;
     }
-    .header-left h3{
-        font-size: 19px;
-        margin-left: 5px;
+    .header-center h3{
+        font-size: 20px;
+        width: 280px;
+        margin: auto;
+        padding-left: 0;
     }
-    .openbtn{
+    .header-right{
         display: block;
+        float: right;
+        width: 100px;
     }
     /*-------------------------------------------*/
     .menu-wrapper{
@@ -37,13 +42,14 @@
     }
     .menu-inner{
         display: none;
-        padding-top: 30px;
     }
 
     .menu-inner li{
         text-align: center;
         border-top: 1px solid white;
-        padding: 25px 0;
+        padding: 20px 0;
+        width: 100%;
+        margin: auto;
     }
     .menu-wrapper a{
         display: inline-block;
