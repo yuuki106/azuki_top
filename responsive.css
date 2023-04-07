@@ -140,7 +140,32 @@
         font-weight: bold;
         font-size: 30px;
     }
+    
     /*-------------------------------------------*/
+
+
+    .news-wrapper{
+        text-align: center;
+    }
+     
+    .news-inner {
+        width: 90%;
+    }
+
+    .news-inner h1{
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    .news h2{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+    .news a{
+        font-size: 20px;
+        padding: 5px;
+    }
+
+   /*-------------------------------------------*/
 
 
 
@@ -190,30 +215,5 @@
         background-size: contain;
     }
 
-    /*-------------------------------------------*/
-
-
-    .news-wrapper{
-        text-align: center;
-    }
-     
-    .news-inner {
-        width: 90%;
-    }
-
-    .news-inner h1{
-        padding-bottom: 20px;
-        font-size: 35px;
-    }
-    .news h2{
-        font-size: 15px;
-        padding-top: 10px;
-    }
-    .news a{
-        font-size: 20px;
-        padding: 5px;
-    }
-
-    /*-------------------------------------------*/
    
 }
