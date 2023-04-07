@@ -144,20 +144,23 @@
 
 
 
-    
-    .phone-menu{
-        border: 1px solid black;
-    }
-    .phone-menu ul{
-        display: flex;
+   .phone-menu{
+        border: 2px solid black;
     }
 
-    .a-menu li{
+    .a-menu{
+        display: flex;
+        
+    }
+    .a-menu a{
         height: 75px;
         width: 33.33%;
         border: 1px solid black;
     }
-    .b-menu li{
+    .b-menu {
+        display: flex;
+    }
+    .b-menu a{
         height: 75px;
         width: 33.33%;
         border: 1px solid black;
